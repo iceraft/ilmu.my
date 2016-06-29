@@ -34,7 +34,7 @@ gem 'carrierwave'
 #mini_magick
 gem 'mini_magick' , '3.7.0'
 #active admin
-# gem 'activeadmin', '~>1.0.0.pre2'
+gem 'activeadmin', '~>1.0.0.pre2'
 #other page needs
 gem 'will_paginate'
 gem 'devise'
