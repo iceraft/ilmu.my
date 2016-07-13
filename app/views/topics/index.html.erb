@@ -1,37 +1,90 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Topics</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>User</th>
-      <th>Picture</th>
-      <th>Description</th>
-      <th>Publish</th>
-      <th>Date publish</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @topics.each do |topic| %>
-      <tr>
-        <td><%= topic.title %></td>
-        <td><%= topic.user_id %></td>
-        <td><%= topic.picture %></td>
-        <td><%= topic.description %></td>
-        <td><%= topic.publish %></td>
-        <td><%= topic.date_publish %></td>
-        <td><%= link_to 'Show', topic %></td>
-        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Topic', new_topic_path %>
+<!-- Tab v2 -->
+<h1 class="title">Kongsian Terhangat</h1>
+<div class="tabs alternative">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#sample-2a" data-toggle="tab">Sample Heading 1</a></li>
+        <li><a href="#sample-2b" data-toggle="tab">Sample Heading 2</a></li>
+        <li><a href="#sample-2c" data-toggle="tab">Sample Heading 3</a></li>
+        <li><a href="#sample-2d" data-toggle="tab">Sample Heading 4</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="sample-2a">
+            <div class="row">
+                <div class="col-md-5"><img src="assets/img/frontpage/filler1.jpg" alt="filler image"></div>
+                <div class="col-md-7">
+                    <h3 class="no-margin no-padding">Humanitatis Per Seacula</h3>
+                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothicas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="sample-2b">
+            <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+        </div>
+        <div class="tab-pane fade in" id="sample-2c">
+            <div class="row">
+                <div class="col-md-5"><img src="assets/img/frontpage/filler3.jpg" alt="filler image"></div>
+                <div class="col-md-7">
+                    <h3 class="no-margin no-padding">Mirum Est Notare</h3>
+                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothicas.</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="sample-2d">
+            <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id.</p>
+            <ul>
+                <li>Donec eget orci metus</li>
+                <li>Ante ac interdum ullamcorper</li>
+                <li>Vivamus imperdiet condimentum</li>
+                <li>Pellentesque fermentum</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Tab v2 -->
+<div class="margin-bottom-40"><hr></div>
+<!-- Tab v3 -->
+<h1 class="title">Kongsian Terkini</h1>
+<div class="row tabs">
+    <div class="col-sm-3">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#sample-3a" data-toggle="tab"><i class="fa fa-home"></i> Sample Heading 1</a></li>
+            <li><a href="#sample-3b" data-toggle="tab"><i class="fa fa-cloud"></i> Sample Heading 2</a></li>
+            <li><a href="#sample-3c" data-toggle="tab"><i class="fa fa-comments"></i> Sample Heading 3</a></li>
+            <li><a href="#sample-3d" data-toggle="tab"><i class="fa fa-gear"></i> Sample Heading 4</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-9">
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="sample-3a">
+                <div class="row">
+                    <div class="col-md-5"><img src="assets/img/frontpage/filler1.jpg" alt="filler image"></div>
+                    <div class="col-md-7">
+                        <h3 class="no-margin no-padding">Humanitatis Per Seacula</h3>
+                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="sample-3b">
+                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            </div>
+            <div class="tab-pane fade in" id="sample-3c">
+                <div class="row">
+                    <div class="col-md-5"><img src="assets/img/frontpage/filler3.jpg" alt="filler image"></div>
+                    <div class="col-md-7">
+                        <h3 class="no-margin no-padding">Mirum Est Notare</h3>
+                        <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothicas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade in" id="sample-3d">
+                <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id.</p>
+                <ul>
+                    <li>Donec eget orci metus</li>
+                    <li>Ante ac interdum ullamcorper</li>
+                    <li>Vivamus imperdiet condimentum</li>
+                    <li>Pellentesque fermentum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
